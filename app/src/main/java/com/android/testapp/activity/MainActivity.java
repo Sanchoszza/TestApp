@@ -1,21 +1,26 @@
-package com.android.testapp;
+package com.android.testapp.activity;
+
+import android.os.Bundle;
+import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.os.Bundle;
-import android.widget.FrameLayout;
+import com.android.testapp.R;
+import com.android.testapp.fragment.ChatBotFragment;
+
 
 public class MainActivity extends AppCompatActivity {
 
     FrameLayout container;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         container = findViewById(R.id.container);
-        replaceFragment(ChatFragment.newInstance(), false);
+        replaceFragment(ChatBotFragment.newInstance(), false);
     }
 
     private void replaceFragment(Fragment fragment, boolean addToBackStack){

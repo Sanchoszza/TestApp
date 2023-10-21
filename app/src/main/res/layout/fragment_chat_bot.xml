@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back_color"
-    tools:context=".MainActivity">
+    android:background="@color/back_color">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,7 +25,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="30dp"
                 android:padding="4dp"
-                android:text="Question"
+                android:text="Вопрос"
                 android:textColor="@color/white"
                 android:textSize="17sp" />
 
@@ -36,7 +35,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 android:padding="4dp"
-                android:text="Response"
+                android:text="Ответ"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -49,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
-        android:hint="Enter your query"
+        android:hint="Введите свой запрос"
         android:padding="5dp"
         android:textColorHint="@color/white"
         app:hintTextColor="@color/white">
